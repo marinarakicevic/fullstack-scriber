@@ -12,7 +12,7 @@ describe('suggest', () => {
           "name": "Madonna",
           "releases": [
             {
-              "id": 8760,
+              "id": "14423",
               "title": "Ray Of Light",
               "notes": "The catalogue number on the spine is different from that on the label.\n\nSome copies have a sticker on front cover (applied on the shrinkwrap).\nMatte cover.\nTransparent inner sleeves."
             }
@@ -150,7 +150,7 @@ describe('suggest', () => {
         "name": "Zzino vs. Filterheadz",
         "releases": [
           {
-            "id": 8871,
+            "id": "16429",
             "title": "African Bulldozer / Sparadrap",
             "notes": "Recorded at Borderland Studio\nPublished by Headroom Music"
           }
