@@ -37,9 +37,12 @@ public class DataReader {
 
                 JsonNode release = releases.get(i);
 
-                Long id = release.get("Id").asLong();
+                String id = release.get("Id").asText();
                 String title = release.get("Title").asText();
                 String notes = release.get("Notes").asText();
+                if(notes.equalsIgnoreCase("null")) {
+                    notes = null;
+                }
 
                 List<Artist> artists = readArtists(release.get("Artists"));
 

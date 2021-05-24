@@ -79,7 +79,7 @@ public class SuggestionController {
         try {
 
             List<Object> suggestion = suggestionService.getAllSuggestions(prefix);
-            Map<String, Object> responseBody = responseHandler.generateResponseForAll(suggestion);
+            Map<String, List<Map<String,Object>>>  responseBody = responseHandler.generateResponseForAll(suggestion);
 
             return ResponseEntity.ok(responseBody);
         } catch (IOException e) {

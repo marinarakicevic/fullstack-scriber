@@ -13,7 +13,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class Release {
 
-    private Long id;
+    private String id;
     private String title;
     private String notes;
     private List<Artist> artists;

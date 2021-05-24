@@ -65,7 +65,7 @@ public class ResponseHandler {
         return response;
     }
 
-    public Map<String, Object> generateResponseForAll(List<Object> suggestions) {
+    public Map<String, List<Map<String,Object>>>  generateResponseForAll(List<Object> suggestions) {
 
         List<Map<String,Object>> artists = new ArrayList<>();
         List<Map<String,Object>> tracks = new ArrayList<>();
@@ -97,10 +97,7 @@ public class ResponseHandler {
         all.put("tracks", tracks);
         all.put("releases", releases);
 
-        Map<String, Object> response = new HashMap<>();
-        response.put("suggestions", all);
-
-        return response;
+        return all;
     }
 
     private Map<String, Object> mapTrack(Track t) {
